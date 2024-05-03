@@ -30,19 +30,21 @@ def main():
 
     # File upload section
     st.header("Upload Student Data")
-    uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
+    uploaded_files = st.file_uploader("Choose up to 3 CSV files (one for each term)", type=["csv"], accept_multiple_files=True)
 
-    if uploaded_file is not None:
-        # Read the uploaded CSV file into a DataFrame
-        data = pd.read_csv(uploaded_file)
+    if uploaded_files:
+        # Read and process the uploaded CSV files
+        for uploaded_file in uploaded_files:
+            # Read the uploaded CSV file into a DataFrame
+            data = pd.read_csv(uploaded_file)
 
-        # Display the uploaded data
-        st.subheader("Uploaded Data")
-        st.write(data)
+            # Display the uploaded data
+            st.subheader("Uploaded Data")
+            st.write(data)
 
-        # Visualize student profiles using radar charts
-        st.header("Student Profiles")
-        visualize_student_profiles(data)
+            # Visualize student profiles using radar charts
+            st.header("Student Profiles")
+            visualize_student_profiles(data)
 
 if __name__ == "__main__":
     main()
