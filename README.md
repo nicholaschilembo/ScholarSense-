@@ -18,8 +18,7 @@ The Student Performance Dashboard is a web application designed to provide educa
 
 ```
 .
-├── main.py  # Main application file
-├── requirements.txt  # Python dependencies
+├── app/educator_maindashboard.py  # Main application file
 ├── README.md  # This README file
 └── data/
     └── student_data.csv  # Sample student data file
