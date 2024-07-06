@@ -249,7 +249,7 @@ def manage_student_notes_and_reports(students_df):
 
 # Main function to run the app
 def main():
-    st.title("Student Performance Dashboard")
+    st.title("SCHOLAR SENSE - Educator Dashboard")
 
     # File upload
     uploaded_file = st.file_uploader("Upload student data CSV", type="csv")
