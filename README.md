@@ -3,7 +3,7 @@
 
 ## Overview
 
-The Student Performance Dashboard is a web application designed to provide educators with comprehensive insights into student performance. The app allows educators to upload student data, analyze class and individual performance, generate detailed reports, and classify students into pathways based on their strengths and weaknesses. The application is built using Streamlit and various data visualization libraries.
+Schlolar Sense is a web application designed to provide educators with comprehensive insights into student performance. The app allows educators to upload student data, analyze class and individual performance, generate detailed reports, and classify students into pathways based on their strengths and weaknesses. The application is built using Streamlit and various data visualization libraries.
 
 ## Features
 
