@@ -283,7 +283,7 @@ def generate_pdf_report(student_data, report_content, theme, subjects):
 def create_bokeh_chart(students_df, subjects):
     source = ColumnDataSource(students_df)
     
-    p = figure(title="Student Performance Overview", x_range=subjects, height=350, toolbar_location=None, tools="")
+    p = figure(title="SCHOLAR SENSE ", x_range=subjects, height=350, toolbar_location=None, tools="")
     
     p.circle(x='subject', y='score', size=8, source=source, line_color="white", fill_alpha=0.6, hover_color="crimson")
     
